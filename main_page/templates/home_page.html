@@ -15,7 +15,7 @@
 <hr>
 Категории: {% for i in category %} <a href="/category/{{ i }}"> {{i}} </a> {% endfor %}<br><hr>
 Курсы: {% for i in courses %}<a href="/course/{{ i }}">{{ i }}</a>{% endfor %}<br><hr>
-Акции: {% for i in sales %}<a href="/sale/{{ i.sale_name }}">{{ i.sale_name }}</a>{% endfor %}<br><hr>
+Акции: {% for i in sales %}{{ i.sale_name }}{% endfor %}<br><hr>
 
 </body>
 </html>
